@@ -1,8 +1,13 @@
 <div appInputStylizer class="app-input-number">
-  <label [for]="formField.label">{{formField.label}}</label>
+  <label [for]="formField.label">{{ formField.label }}</label>
   <div class="custom-arrows">
     <div class="minus" (click)="minus()"></div>
-    <input type="number" [id]="formField.label" [value]="formField.value" (input)="onFieldChange($event)" #input/>
+    <input
+      type="number"
+      [id]="formField.label"
+      [value]="formField.value"
+      (input)="onFieldChange($event)"
+      #input />
     <div class="plus" (click)="plus()"></div>
   </div>
 </div>

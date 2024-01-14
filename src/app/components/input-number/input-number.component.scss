@@ -2,13 +2,13 @@
   // turn off standard arrows
   & input::-webkit-inner-spin-button,
   & input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-  opacity: 1;
+    -webkit-appearance: none;
+    margin: 0;
+    opacity: 1;
   }
 }
 
-$arrows-bgc: #C7D1F4;
+$arrows-bgc: #c7d1f4;
 $arrows-color: white;
 
 .custom-arrows {
@@ -19,7 +19,7 @@ $arrows-color: white;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    width:92px;
+    width: 92px;
   }
 
   & .minus,
@@ -40,6 +40,5 @@ $arrows-color: white;
   & .plus {
     right: 10px;
     background: url(../../../assets/images/arrow-plus-icon.svg);
-
   }
 }

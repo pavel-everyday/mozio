@@ -1,4 +1,12 @@
 <div appInputStylizer>
-  <label [for]="formField.label">{{formField.label}}</label>
-  <input [id]="formField.label" [value]="formField.value" (input)="onFieldChange($event)" />
+  <label [for]="formField.label">{{ formField.label }}</label>
+  <input
+    [id]="formField.label"
+    [value]="formField.value"
+    (input)="onFieldChange($event)" />
+
+  <app-dropdown
+    [options]="suggestions"
+    (selected)="setValueToField($event)"
+    [open]="isOpen" />
 </div>

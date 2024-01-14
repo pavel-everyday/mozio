@@ -1,0 +1,17 @@
+<div
+  class="d-inline-block"
+  ngbDropdown
+  #myDrop="ngbDropdown"
+  [open]="open"
+  [autoClose]="false">
+  <!-- (focus)="myDrop.open()" -->
+
+  <div ngbDropdownMenu aria-labelledby="dropdownManual">
+    <button
+      *ngFor="let option of options"
+      ngbDropdownItem
+      (click)="onSelect(option.id)">
+      {{ option.label }}
+    </button>
+  </div>
+</div>

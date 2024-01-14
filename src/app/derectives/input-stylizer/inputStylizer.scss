@@ -2,7 +2,7 @@
 // these styles are global
 
 $input-border-radius: 6px;
-$input-border-color: #E5E7EB;
+$input-border-color: #e5e7eb;
 
 .app-input {
   display: flex;
@@ -22,7 +22,7 @@ $input-border-color: #E5E7EB;
     outline: none;
   }
 
-  &>label {
+  & > label {
     color: $font-color-black;
     font-size: 12px;
     line-height: 16px;
