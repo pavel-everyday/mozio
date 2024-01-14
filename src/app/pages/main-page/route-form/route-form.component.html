@@ -1,0 +1,17 @@
+<form class="route-form" [formGroup]="form" (submit)="onSubmit()">
+
+  <div *ngFor="let item of placesControls; let i = index" formGroupName="places">
+      <app-input-text
+        [formField]="item"
+      />
+
+  </div>
+
+  <app-input-number
+    [formField]="passengersControl"
+  />
+
+  <app-button (click)="onAddField()" version="link">Add destination</app-button>
+
+  <app-button version="default" [disabled]="true" [wide]="true">SUBMIT</app-button>
+</form>

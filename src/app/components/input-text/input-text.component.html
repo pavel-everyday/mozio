@@ -1,0 +1,4 @@
+<div appInputStylizer>
+  <label [for]="formField.label">{{formField.label}}</label>
+  <input [id]="formField.label" [value]="formField.value" (input)="onFieldChange($event)" />
+</div>

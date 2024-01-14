@@ -1,0 +1,45 @@
+@import '../.././../styles/variables.scss';
+
+$button-bgc-default: #374151;
+$button-bgc-default-disabled: #E5E7EB;
+$button-color-default: #fff;
+
+button {
+  cursor: pointer;
+}
+
+.default {
+  outline: none;
+  border: none;
+
+  border-radius: 4px;
+  background: $button-bgc-default;
+
+  color: $button-color-default;
+  padding: 8px 12px;
+}
+
+.default[disabled] {
+  background: $button-bgc-default-disabled;
+}
+
+.link,
+.link:focus,
+.link:active,
+.link:focus-visible {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: $font-purple-dark;
+  padding: 0;
+}
+
+[disabled] {
+  cursor: auto;
+}
+
+:host.wrapperWide,
+.wide {
+  display: block;
+  width: 100%;
+}

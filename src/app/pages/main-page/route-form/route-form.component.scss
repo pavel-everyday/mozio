@@ -1,0 +1,27 @@
+@import '../../../../styles/variables.scss';
+
+.route {
+  &-form {
+    margin-bottom: 24px;
+    max-width: 324px;
+    min-width: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+
+}
+
+.button-add {
+  color: $font-purple-dark;
+  font-size: 12px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 16px;
+}

@@ -1,0 +1,45 @@
+.app-input-number {
+  // turn off standard arrows
+  & input::-webkit-inner-spin-button,
+  & input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  opacity: 1;
+  }
+}
+
+$arrows-bgc: #C7D1F4;
+$arrows-color: white;
+
+.custom-arrows {
+  //do custom arrows in input
+  position: relative;
+
+  & input {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    width:92px;
+  }
+
+  & .minus,
+  & .plus {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+  }
+
+  & .minus {
+    left: 10px;
+    background: url(../../../assets/images/arrow-minus-icon.svg);
+  }
+
+  & .plus {
+    right: 10px;
+    background: url(../../../assets/images/arrow-plus-icon.svg);
+
+  }
+}
